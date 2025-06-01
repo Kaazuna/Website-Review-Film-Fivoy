@@ -126,7 +126,6 @@
                         </a>
                     @endfor
                 </div>
-
             </div>
         </div>
 

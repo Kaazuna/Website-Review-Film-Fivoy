@@ -28,6 +28,14 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
+Route::get('/managefilm', function () {
+    return view('managefilm');
+});
+
+Route::get('/report', function () {
+    return view('report');
+});
+
 Route::get('/register', [FilmController::class, 'showRegister'])->name('register');
 Route::post('/register', [FilmController::class, 'register'])->name('register.store');
 Route::post('/login', [FilmController::class, 'login'])->name('login.store');
